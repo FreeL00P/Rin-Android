@@ -6,7 +6,11 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.Article
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Drafts
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -61,25 +65,25 @@ fun HomeScreen(
                 NavigationBarItem(
                     selected = true,
                     onClick = {},
-                    icon = { Icon(Icons.Default.Search, contentDescription = null) },
+                    icon = { Icon(Icons.AutoMirrored.Filled.Article, contentDescription = null) },
                     label = { Text(stringResource(R.string.nav_home)) },
                 )
                 NavigationBarItem(
                     selected = false,
                     onClick = onWriteClick,
-                    icon = { Icon(Icons.Default.Add, contentDescription = null) },
+                    icon = { Icon(Icons.Default.Edit, contentDescription = null) },
                     label = { Text(stringResource(R.string.nav_editor)) },
                 )
                 NavigationBarItem(
                     selected = false,
                     onClick = onDraftsClick,
-                    icon = { Icon(Icons.Default.Search, contentDescription = null) },
+                    icon = { Icon(Icons.Default.Drafts, contentDescription = null) },
                     label = { Text(stringResource(R.string.nav_drafts)) },
                 )
                 NavigationBarItem(
                     selected = false,
                     onClick = onProfileClick,
-                    icon = { Icon(Icons.Default.Search, contentDescription = null) },
+                    icon = { Icon(Icons.Default.Person, contentDescription = null) },
                     label = { Text(stringResource(R.string.nav_profile)) },
                 )
             }
