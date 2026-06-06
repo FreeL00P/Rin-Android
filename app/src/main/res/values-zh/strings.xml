@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rin</string>
+    <string name="setup_title">连接你的博客</string>
+    <string name="setup_hint">博客地址</string>
+    <string name="setup_connect">连接</string>
+    <string name="setup_validating">正在连接…</string>
+    <string name="setup_error_invalid_url">请输入有效的地址</string>
+    <string name="setup_error_connection">无法连接到服务器</string>
+    <string name="login_title">登录</string>
+    <string name="login_username">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="login_button">登录</string>
+    <string name="login_loading">登录中…</string>
+    <string name="login_github">GitHub 登录</string>
+    <string name="login_or">或</string>
+    <string name="login_error_empty">请输入用户名和密码</string>
+    <string name="login_error_invalid">用户名或密码错误</string>
+    <string name="login_error_network">网络错误</string>
+    <string name="login_error_failed">登录失败</string>
+    <string name="login_no_methods">没有可用的登录方式</string>
+    <string name="login_oauth_only">使用第三方登录</string>
+
+    <string name="nav_home">文章</string>
+    <string name="nav_editor">写作</string>
+    <string name="nav_drafts">草稿</string>
+    <string name="nav_profile">我的</string>
+
+    <string name="home_tab_published">已发布</string>
+    <string name="home_tab_draft">草稿</string>
+    <string name="home_tab_unlisted">未列出</string>
+    <string name="home_search">搜索</string>
+    <string name="home_empty">暂无文章</string>
+    <string name="home_loading">加载中…</string>
+
+    <string name="detail_edit">编辑</string>
+    <string name="detail_delete">删除</string>
+    <string name="detail_delete_confirm">确定要删除这篇文章吗？</string>
+    <string name="detail_confirm">确定</string>
+    <string name="detail_cancel">取消</string>
+
+    <string name="editor_title_hint">标题</string>
+    <string name="editor_content_hint">开始写作…</string>
+    <string name="editor_preview">预览</string>
+    <string name="editor_edit">编辑</string>
+    <string name="editor_publish">发布</string>
+    <string name="editor_save_draft">保存草稿</string>
+    <string name="editor_update">更新</string>
+    <string name="editor_summary">摘要</string>
+    <string name="editor_tags">标签（逗号分隔）</string>
+    <string name="editor_alias">自定义链接别名</string>
+    <string name="editor_visibility">可见性</string>
+    <string name="editor_listed">公开</string>
+    <string name="editor_unlisted">未列出</string>
+    <string name="editor_draft_label">草稿</string>
+    <string name="editor_published">发布成功</string>
+    <string name="editor_updated">更新成功</string>
+    <string name="editor_error_publish">发布失败</string>
+
+    <string name="toolbar_h1">H1</string>
+    <string name="toolbar_h2">H2</string>
+    <string name="toolbar_h3">H3</string>
+    <string name="toolbar_bold">B</string>
+    <string name="toolbar_italic">I</string>
+    <string name="toolbar_code">代码</string>
+    <string name="toolbar_link">链接</string>
+    <string name="toolbar_image">图片</string>
+    <string name="toolbar_quote">引用</string>
+    <string name="toolbar_list">列表</string>
+
+    <string name="drafts_title">本地草稿</string>
+    <string name="drafts_empty">暂无本地草稿</string>
+    <string name="drafts_delete_confirm">确定删除此草稿？</string>
+    <string name="drafts_continue">继续编辑</string>
+    <string name="drafts_publish">发布</string>
+
+    <string name="profile_title">个人资料</string>
+    <string name="profile_username">用户名</string>
+    <string name="profile_avatar">头像地址</string>
+    <string name="profile_save">保存</string>
+    <string name="profile_saved">已保存</string>
+    <string name="profile_logout">退出登录</string>
+    <string name="profile_logout_confirm">确定要退出登录吗？</string>
+    <string name="profile_settings">设置</string>
+    <string name="profile_dark_theme">深色主题</string>
+    <string name="profile_language">语言</string>
+    <string name="profile_blog_url">博客地址</string>
+    <string name="profile_follow_system">跟随系统</string>
+
+    <string name="search_hint">搜索文章…</string>
+    <string name="search_no_results">未找到结果</string>
+
+    <string name="image_upload">上传图片</string>
+    <string name="image_uploading">上传中…</string>
+    <string name="image_error">图片上传失败</string>
+    <string name="upload_settings">图床设置</string>
+    <string name="upload_mode_label">上传方式</string>
+    <string name="upload_mode_rin">Rin 服务端</string>
+    <string name="upload_mode_external">外部图床</string>
+    <string name="upload_url">上传地址</string>
+    <string name="upload_user">账号</string>
+    <string name="upload_pass">密码</string>
+
+    <string name="error_network">网络错误</string>
+    <string name="error_unauthorized">请重新登录</string>
+    <string name="error_generic">出了点问题</string>
+</resources>
