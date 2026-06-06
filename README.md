@@ -1,28 +1,30 @@
 # Rin Android
 
-Rin Android is a Jetpack Compose client for the [Rin](https://github.com/openRin/Rin) blog platform. It focuses on mobile publishing: writing posts, managing drafts, browsing articles, and uploading images from an Android device.
+[English](README.en.md)
 
-## Features
+Rin Android 是一个基于 Jetpack Compose 的 [Rin](https://github.com/openRin/Rin) 博客平台 Android 客户端，主要面向移动端写作、文章管理和图片上传。
 
-- Connect to a self-hosted Rin blog instance
-- Password login with encrypted local token storage
-- Browse published, draft, and unlisted posts
-- Write and update Markdown articles
-- Insert uploaded images into the editor as Markdown
-- Save local drafts with Room
-- Search posts
-- Manage profile information
-- Switch between Rin server storage and external image hosting
-- English and Chinese UI resources
+## 功能特性
 
-## Compatible Projects
+- 连接自部署 Rin 博客实例
+- 密码登录，并使用加密本地存储保存登录令牌
+- 浏览已发布、草稿和未列出的文章
+- 编写和更新 Markdown 文章
+- 上传图片并自动插入 Markdown 图片链接
+- 使用 Room 保存本地草稿
+- 搜索文章
+- 管理个人资料
+- 支持 Rin 服务端存储和外部图床两种上传模式
+- 支持中文和英文界面资源
 
-- Blog backend/frontend: [openRin/Rin](https://github.com/openRin/Rin)
-- External image hosting: [0-RTT/telegraph](https://github.com/0-RTT/telegraph)
+## 兼容项目
 
-External image hosting is configured inside the app. No upload endpoint, username, or password is bundled in this repository.
+- 博客后端/前端：[openRin/Rin](https://github.com/openRin/Rin)
+- 外部图床：[0-RTT/telegraph](https://github.com/0-RTT/telegraph)
 
-## Tech Stack
+外部图床信息需要在 App 内自行配置。本仓库不会内置上传地址、用户名、密码或其他个人配置。
+
+## 技术栈
 
 - Kotlin
 - Jetpack Compose
@@ -35,33 +37,33 @@ External image hosting is configured inside the app. No upload endpoint, usernam
 - Coil
 - CommonMark
 
-## Requirements
+## 环境要求
 
-- Android Studio with JDK 17 or newer
+- Android Studio，JDK 17 或更高版本
 - Android SDK 36
-- Gradle wrapper included in this repository
-- Minimum Android SDK: 26
+- 仓库内已包含 Gradle Wrapper
+- 最低 Android SDK：26
 
-## Build
+## 构建
 
 ```powershell
 .\gradlew.bat assembleDebug
 ```
 
-The debug APK will be generated at:
+生成的 debug APK 位于：
 
 ```text
 app/build/outputs/apk/debug/app-debug.apk
 ```
 
-## Setup
+## 使用方法
 
-1. Start the app.
-2. Enter the Rin blog base URL.
-3. Sign in with a Rin account.
-4. Optional: open Profile and configure external image hosting.
+1. 启动 App。
+2. 输入 Rin 博客基础地址。
+3. 使用 Rin 账号登录。
+4. 可选：进入“我的”页面配置外部图床。
 
-For Telegraph-compatible image hosting, use the service upload endpoint and credentials provided by your own deployment. The app sends multipart form data with the field name `file` and expects this JSON response:
+对于兼容 Telegraph 的图床，请填写你自己部署服务提供的上传接口和账号信息。App 会使用 multipart form data 上传文件，字段名为 `file`，并期望接口返回如下 JSON：
 
 ```json
 {
@@ -69,12 +71,12 @@ For Telegraph-compatible image hosting, use the service upload endpoint and cred
 }
 ```
 
-## Privacy
+## 隐私说明
 
-This repository does not include personal blog URLs, image hosting URLs, usernames, passwords, API keys, keystores, or local Android SDK paths.
+本仓库不包含个人博客地址、图床地址、用户名、密码、API Key、签名密钥或本机 Android SDK 路径。
 
-Runtime secrets are stored locally on the device using encrypted preferences.
+运行时的登录令牌和图床配置会保存在设备本地的加密偏好设置中。
 
-## License
+## 许可证
 
-Add a license that matches your distribution requirements.
+本项目基于 MIT License 开源，详见 [LICENSE](LICENSE)。
